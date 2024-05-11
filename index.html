@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pics-Changer</title>
+</head>
+<style>
+    body{
+        /* background: rgb(172, 172, 172); */
+    }
+    .images{
+        /* border: 2px solid red; */
+        width: 90%;
+        height: 350PX;
+        margin: 5PX 80px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    #imag{
+        width: 50%;
+        height: 345px ;
+        /* border: 2px solid blue; */
+    }
+    #btn{
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+    #btn:hover{
+        border: 1px solid red;
+        background: white;
+        cursor: pointer;
+        color: red;
+    }
+    
+</style>
+<body>
+    <br>
+    <div>
+        <h1>Change the Vehicle pic on click</h1>
+    </div>
+    <br><br><br>
+    
+    <div class="images">
+        <img src="Images/car.png" id="imag" alt="" width="700px">
+        <!-- <img src="Images/" alt=""> -->
+    </div>
+    <br><br><br>
+    <div>
+        <button id="btn" onclick="car()">Car</button>
+        <button id="btn" onclick="bike()">Bike</button>
+        <button id="btn" onclick="cycle()">Cycle</button>
+        <button id="btn" onclick="bus()">Bus</button>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+</html>
